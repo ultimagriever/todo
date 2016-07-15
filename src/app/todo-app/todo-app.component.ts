@@ -14,10 +14,7 @@ export class TodoAppComponent implements OnInit {
     newTodo : Todo = new Todo();
 
     constructor(private todoService: TodoService) {}
-
-    ngOnInit() {
-    }
-
+    
     toggleTodoComplete(todo) {
         this.todoService.toggleTodoComplete(todo);
     }
